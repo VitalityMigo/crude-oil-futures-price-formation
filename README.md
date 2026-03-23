@@ -51,7 +51,7 @@ The CLI will prompt you to select an asset (Brent or WTI) and a time horizon (6 
    - `plot/price_{asset}.png` — Monte Carlo paths simulation
    - `plot/quote_{asset}.png` — bid/ask time series and inventory/vol scatter plot
 
-An explanation of the quoting model used in the simulation is done in [notebook.ipynb](https://github.com/VitalityMigo/crude-oil-futures-price-formation/blob/main/notebook.ipynb).**.
+An explanation of the quoting model used in the simulation is done in [notebook.ipynb](https://github.com/VitalityMigo/crude-oil-futures-price-formation/blob/main/notebook.ipynb).
 
 ---
 
