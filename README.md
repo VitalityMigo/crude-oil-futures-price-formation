@@ -1,6 +1,6 @@
 # Crude Oil Price Formation under Multiple Market Makers
 
-A simulation of how market-maker inventory dynamics have a permanent impact on the mid price of an asset, built around traditional systematic quoting model.
+A simulation of how market-maker inventory dynamics have a permanent impact on the mid price of an asset, built around traditional systematic quoting model applied to Brent and WTI Crude Oil Futures.
 
 ---
 
@@ -11,6 +11,10 @@ The core topic of this project is to understand how the aggregate inventory of c
 Each market maker holds a net position (inventory) and adjusts their bid/ask quotes accordingly — widening the spread when uncertain and skewing quotes to revert toward a flat book. When several independent market makers quote simultaneously, their collective behaviour determines the Best Bid and Offer (BBO), and by extension the effective mid price. 
 
 This project simulates that process over real historical price data for Brent Crude and WTI Crude Oil.
+
+<br>
+
+<img width="2250" height="900" alt="image" src="https://github.com/user-attachments/assets/602936ad-73b8-4e9b-b101-b079936016f4" />
 
 ---
 
@@ -29,7 +33,7 @@ cd src
 python core.py
 ```
 
-The CLI will prompt you to select an asset (Brent or WTI) and a time horizon (6 months / 1 year / 3 years). It then runs the full pipeline automatically.
+The CLI will prompt you to select an asset (Brent or WTI) and a time horizon (6 months, 1 year, 3 years). It then runs the full pipeline automatically.
 
 ---
 
@@ -47,7 +51,7 @@ The CLI will prompt you to select an asset (Brent or WTI) and a time horizon (6 
    - `plot/price_{asset}.png` — Monte Carlo paths simulation
    - `plot/quote_{asset}.png` — bid/ask time series and inventory/vol scatter plot
 
-An explanation of the quoting model used in the simulation is done in **`notebook.ipynb`**.
+An explanation of the quoting model used in the simulation is done in [notebook.ipynb](https://github.com/VitalityMigo/crude-oil-futures-price-formation/blob/main/notebook.ipynb).**.
 
 ---
 
